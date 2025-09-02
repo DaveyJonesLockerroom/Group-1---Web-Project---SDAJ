@@ -1,2 +1,109 @@
-<!--Silang SONG's Page-->
+<!--
+
+Silang SONG's Page
+A game development company expanding its tech team (G01)
+
+-->
+
 <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="An application form for a game recruitment website">
+    <meta name="keywords" content="HTML, Form, tags, Website, Assignment1">
+    <meta name="Silang" content="Silang">
+    <title>Form for SDAJ appliance</title>
+</head>
+<body>
+    <header>
+        <h1>SDAJ Aplliance Form</h1>
+    </header>
+
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <!--Job Reference Number-->
+        <label for="jobreferencenumber">Job Reference Number</label>
+        <input type="text" pattern="[A-Za-z0-9]{5}" name="job_ref_num" id="job_ref_num" maxlength="5" placeholder="Please enter your JRN" required>
+        <br>
+        <!--First and last name-->
+        <label for="firstname">First Name</label>
+        <input type="text" pattern="[A-Za-z]+" name= "firstname" id="firstname" maxlength ="20" size="20" placeholder="First Name" required>
+        <br>
+        <label for="lastname">Last Name</label> 
+        <input type="text" pattern="[A-Za-z]+" name= "lastname" id="lastname" maxlength ="20" size="20" placeholder="Last Name" required>
+        <br>
+        <!--Birthday-->
+        <label for="dateofbirth">Date of Birth</label>
+        <input type="text" name= "dateofbirth" id="dateofbirth" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" placeholder="dd/mm/yyyy" required>
+        <br>
+
+        <!--Gender-->
+        <fieldset>
+            <legend>Gender</legend>
+                <label>
+                <input type="radio" name="gender" id="male">Male
+                </label>
+
+                <label>
+                <input type="radio" name="gender" id="female">Female
+                </label>
+        </fieldset>
+
+        <!--Address-->
+        <label for="address">Street Address</label>
+        <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
+        <br>
+        <label for="suburb">Suburb</label>
+        <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
+        <br>
+        <label for="State">State</label>
+        <select name="state" id="address" required>
+            <option value="">Please Select State</option>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+            <option value="OTHER">OTHER</option>
+        </select>
+        <br>
+        <label for="postcode">Postcode</label>
+        <input type="text" pattern="\d{4}" name="postcode" id="address" maxlength="4" required>
+        <br>
+
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" required>
+        <br>
+
+        <!--Phone Number-->
+        <label for="phonenumber">Phone Number</label>
+        <input type="text" pattern="\d{8,12}" name="phonenumber" id="phonenumber" minlength="8" maxlength="12" required>
+        <br>
+
+        <fieldset>
+            <label for="skills">Skills</label>
+            <input type="checkbox" id="skills"> Skill1
+            <input type="checkbox" id="skills"> Skill2
+            <input type="checkbox" id="skills"> Skill3
+            <input type="checkbox" id="skills"> Skill4
+            <input type="checkbox" id="skills"> Skill5
+            <br>
+            <label for="otherskill">Other Skills</label>
+            <br>
+            <textarea name="textarea" id="skills" rows="5" cols="50" placeholder="Other Skills"></textarea>
+
+        </fieldset>
+        
+            
+        
+        
+
+        <input type= "submit" value="Book">
+	    <input type= "reset" value="Reset Form">
+    </form>
+</body>
+</html>
