@@ -25,7 +25,7 @@ A game development company expanding its tech team (G01)
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
         <!--Job Reference Number-->
         <label for="jobreferencenumber">Job Reference Number</label>
-        <input type="text" pattern="[A-Za-z0-9]{5}" name="job_ref_num" id="job_ref_num" maxlength="5" placeholder="Please enter your JRN" required>
+        <input type="text" pattern="[A-Za-z0-9]{5}" name="jobreferencenumber" id="jobreferencenumber" maxlength="5" placeholder="Please enter your JRN" required>
         <br>
         <!--First and last name-->
         <label for="firstname">First Name</label>
@@ -56,10 +56,10 @@ A game development company expanding its tech team (G01)
         <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
         <br>
         <label for="suburb">Suburb</label>
-        <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
+        <input type="text" pattern="[A-Za-z0-9]+" id="suburb" name="address" maxlength="40" size="40" required>
         <br>
-        <label for="State">State</label>
-        <select name="state" id="address" required>
+        <label for="state">State</label>
+        <select name="state" id="state" required>
             <option value="">Please Select State</option>
             <option value="VIC">VIC</option>
             <option value="NSW">NSW</option>
@@ -73,7 +73,7 @@ A game development company expanding its tech team (G01)
         </select>
         <br>
         <label for="postcode">Postcode</label>
-        <input type="text" pattern="\d{4}" name="postcode" id="address" maxlength="4" required>
+        <input type="text" pattern="\d{4}" name="postcode" id="postcode" maxlength="4" required>
         <br>
 
         <!--Email-->
@@ -87,16 +87,16 @@ A game development company expanding its tech team (G01)
         <br>
 
         <fieldset>
-            <label for="skills">Skills</label>
-            <input type="checkbox" id="skills"> Skill1
-            <input type="checkbox" id="skills"> Skill2
-            <input type="checkbox" id="skills"> Skill3
-            <input type="checkbox" id="skills"> Skill4
-            <input type="checkbox" id="skills"> Skill5
+            <label>Skills</label>
+            <input type="checkbox" name="skills"> Skill1
+            <input type="checkbox" name="skills"> Skill2
+            <input type="checkbox" name="skills"> Skill3
+            <input type="checkbox" name="skills"> Skill4
+            <input type="checkbox" name="skills"> Skill5
             <br>
-            <label for="otherskill">Other Skills</label>
+            <label>Other Skills</label>
             <br>
-            <textarea name="textarea" id="skills" rows="5" cols="50" placeholder="Other Skills"></textarea>
+            <textarea name="writetext" rows="5" cols="50" placeholder="Other Skills"></textarea>
 
         </fieldset>
         
