@@ -1,0 +1,40 @@
+/*
+filename: jobs.css
+
+author: Ari Stein
+
+created: 4/09/2025
+
+last modified: 4/09/2025
+
+description: css for jobs.html
+*/
+
+#job-listings {
+    width: 90%;
+    border-collapse: seperate;
+    margin: 40px auto;
+    border-spacing: 12px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    border-radius: 12px;
+    background-color:#fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    vertical-align:top;
+    
+}
+
+
+td:first-child, th:first-child {
+    background-color:#676565;
+}
+td:last-child, th:last-child {
+    background-color: #676565;
+}
+td:nth-child(2), th:nth-child(2) {
+    background-color: #a3a1a1;
+}

@@ -6,7 +6,9 @@
     <meta name="description" content="Jobs page to list current job openings" >
     <meta name="keywords" content="jobs, careers, openings" >
     <meta name="author" content="Ari Stein" >
-    <Title> Placeholder for company name</Title>
+    <title> Placeholder for company name</title>
+    <link rel="stylesheet" href="styles/index-style.css" />
+    <link rel="stylesheet" href="styles/jobs.css" />
 </head>
 
 <body>
@@ -24,16 +26,40 @@
     <p> We are currently hiring for the following positions: </p>
 
     <!-- change list to table or grid with job title, requirements, ect.-->
-    <ul>
-        <li> Lead programmer </li>
-        <li> Junior Programmer </li>
-        <li> Marketing something </li>
-        <li> Website developer (urgent) </li>
-    </ul>
+    
+    <table id=""job-listings">
+        <tr>
+            <th>Job Title</th>
+            <th>Urgency</th>
+            <th>Requirements</th>
+        </tr>
+        <tr>
+            <td>Software Engineer</td>
+            <td>High</td>
+            <td>Bachelor's degree in Computer Science or related field, 3+ years of experience in software development, proficiency in Java and Python.</td>
+        </tr>
+        <tr>
+            <td>Data Analyst</td>
+            <td>Medium</td>
+            <td>Bachelor's degree in Statistics, Mathematics, or related field, 2+ years of experience in data analysis, proficiency in SQL and Excel.</td>
+        </tr>
+        <tr>
+            <td>Marketing Manager</td>
+            <td>Low</td>
+            <td>Bachelor's degree in Marketing or related field, 5+ years of experience in marketing management, strong communication and leadership skills.</td>
+        </tr>
+    </table>
+    
     <!-- highlight this, especially the application link-->
     <p> To apply, please visit our <a href="apply.html">application page</a>. </p>
-</body>
 
+
+    <footer>
+    <p> &copy; 2024 Placeholder for company name </p>
+    </footer>
+
+
+</body>
 
 
 
