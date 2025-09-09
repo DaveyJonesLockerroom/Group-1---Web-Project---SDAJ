@@ -8,37 +8,105 @@ A game development company expanding its tech team (G01)
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="description" content="An application form for a game recruitment website">
     <meta name="keywords" content="HTML, Form, tags, Website, Assignment1">
     <meta name="Silang" content="Silang">
     <title>Form for SDAJ appliance</title>
+    
+    <!--Linked to apply.css page-->
+    <link rel="stylesheet" href="styles/apply.css">
+
+    
+    <style>
+        .top_page {
+            
+            /* color: white;
+             putting text in the middle of the image  
+            display: flex;
+          
+            align-items: center;
+            justify-content: center;
+           
+            font-size: 50px;
+            setting the size of image  QUESTIONS: why is my image not filling up the entire section  
+            min-height: 100vh; */
+            
+            background-image: url('images/chatgpt_darkfantasy.png');
+            background-repeat: no-repeat;
+            background-size: cover;   
+        }
+    </style>
+
 </head>
+
 <body>
-    <header>
-        <h1>SDAJ Aplliance Form</h1>
+    
+    <!-- The navigation bar and logo -->
+    <div class="navbar">
+        <a href="index.html" class="logo" target="_blank">SDAJ</a>
+
+        <nav class="navigationbar">
+            <a href="index.html" class="navtitle" target="_blank">Home</a>
+            <a href="careers.html" class="navtitle" target="_blank">Jobs</a>
+            <a href="about.html" class="navtitle" target="_blank">About</a>
+        </nav>
+    </div>
+    
+    <!-- The image and aplliance option -->
+     <section class="top_page">
+
+        <div class="content">
+            <h2>Find a roles that is suitable for you!!!</h2>
+        
+            <a href="#form">More Information</a>
+
+        </div>
+
+        
+     </section>
+
+
+    <!-- Information section  -->
+     <header>    
+        <h1>Begin Your Journey With Us</h1>
     </header>
 
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <p>Some information about the website</p>
+
+    <br>
+
+    
+
+
+
+
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" class="form">
         <!--Job Reference Number-->
+        <div class="form-jobnumber">
         <label for="jobreferencenumber">Job Reference Number</label>
-        <input type="text" pattern="[A-Za-z0-9]{5}" name="job_ref_num" id="job_ref_num" maxlength="5" placeholder="Please enter your JRN" required>
         <br>
+        <input type="text" pattern="[A-Za-z0-9]{5}" name="jobreferencenumber" id="jobreferencenumber" maxlength="5" placeholder="Please enter your JRN" required>
+        </div>
+              
+
         <!--First and last name-->
-        <label for="firstname">First Name</label>
-        <input type="text" pattern="[A-Za-z]+" name= "firstname" id="firstname" maxlength ="20" size="20" placeholder="First Name" required>
-        <br>
-        <label for="lastname">Last Name</label> 
-        <input type="text" pattern="[A-Za-z]+" name= "lastname" id="lastname" maxlength ="20" size="20" placeholder="Last Name" required>
-        <br>
+        <div class="form-name">
+            <label for="name"> Name</label>
+            <input type="text" pattern="[A-Za-z]+" name= "firstname" id="name" maxlength ="20" size="20" placeholder="First Name" required>
+            <input type="text" pattern="[A-Za-z]+" name= "lastname" maxlength ="20" size="20" placeholder="Last Name" required>
+        </div>
+
         <!--Birthday-->
-        <label for="dateofbirth">Date of Birth</label>
-        <input type="text" name= "dateofbirth" id="dateofbirth" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" placeholder="dd/mm/yyyy" required>
-        <br>
+        <div class="form-birthday">
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="text" name= "dateofbirth" id="dateofbirth" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" placeholder="dd/mm/yyyy" required>
+        </div>
 
         <!--Gender-->
-        <fieldset>
+        <fieldset class="form-gender">
             <legend>Gender</legend>
                 <label>
                 <input type="radio" name="gender" id="male">Male
@@ -50,53 +118,58 @@ A game development company expanding its tech team (G01)
         </fieldset>
 
         <!--Address-->
-        <label for="address">Street Address</label>
-        <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
-        <br>
-        <label for="suburb">Suburb</label>
-        <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
-        <br>
-        <label for="State">State</label>
-        <select name="state" id="address" required>
-            <option value="">Please Select State</option>
-            <option value="VIC">VIC</option>
-            <option value="NSW">NSW</option>
-            <option value="QLD">QLD</option>
-            <option value="NT">NT</option>
-            <option value="WA">WA</option>
-            <option value="SA">SA</option>
-            <option value="TAS">TAS</option>
-            <option value="ACT">ACT</option>
-            <option value="OTHER">OTHER</option>
-        </select>
-        <br>
-        <label for="postcode">Postcode</label>
-        <input type="text" pattern="\d{4}" name="postcode" id="address" maxlength="4" required>
-        <br>
+        <div class="form-address">
+            <label for="address">Street Address</label>
+            <input type="text" pattern="[A-Za-z0-9]+" id="address" name="address" maxlength="40" size="40" required>
+            <br>
+            <label for="suburb">Suburb</label>
+            <input type="text" pattern="[A-Za-z0-9]+" id="suburb" name="address" maxlength="40" size="40" required>
+            <br>
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+                <option value="">Please Select State</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+                <option value="OTHER">OTHER</option>
+            </select>
+        
+            <label for="postcode">Postcode</label>
+            <input type="text" pattern="\d{4}" name="postcode" id="postcode" maxlength="4" required>
+        </div>
 
         <!--Email-->
-        <label for="email">Email</label>
-        <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" required>
-        <br>
+        <div class="form-email">
+            <label for="email">Email</label>
+            <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" required>
+        </div>
 
         <!--Phone Number-->
-        <label for="phonenumber">Phone Number</label>
-        <input type="text" pattern="\d{8,12}" name="phonenumber" id="phonenumber" minlength="8" maxlength="12" required>
-        <br>
+        <div class="form-phonenumber">
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" pattern="\d{8,12}" name="phonenumber" id="phonenumber" minlength="8" maxlength="12" required>
+        </div>
 
-        <fieldset>
-            <label for="skills">Skills</label>
-            <input type="checkbox" id="skills"> Skill1
-            <input type="checkbox" id="skills"> Skill2
-            <input type="checkbox" id="skills"> Skill3
-            <input type="checkbox" id="skills"> Skill4
-            <input type="checkbox" id="skills"> Skill5
+        <!--List of Skills-->
+        <div class="form-skills">
+            <label>Skills</label>
+            <input type="checkbox" name="skills"> Skill1
+            <input type="checkbox" name="skills"> Skill2
+            <input type="checkbox" name="skills"> Skill3
+            <input type="checkbox" name="skills"> Skill4
+            <input type="checkbox" name="skills"> Skill5
             <br>
-            <label for="otherskill">Other Skills</label>
+            <label>Other Skills</label>
             <br>
-            <textarea name="textarea" id="skills" rows="5" cols="50" placeholder="Other Skills"></textarea>
+            <textarea name="writetext" rows="5" cols="50" placeholder="Other Skills"></textarea>
+        </div>
 
-        </fieldset>
+       
         
             
         
@@ -105,5 +178,15 @@ A game development company expanding its tech team (G01)
         <input type= "submit" value="Book">
 	    <input type= "reset" value="Reset Form">
     </form>
+    <hr>
+
+    <footer>
+        <nav>
+            <a href="index.html" target="_blank">Jobs</a>
+            <a href="careers.html" target="_blank">About</a>
+            <a href="about.html" target="_blank">Projects</a>
+        </nav>
+    </footer>
+
 </body>
 </html>
