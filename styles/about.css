@@ -1,6 +1,190 @@
-#headings {
-    text-align: center;
-    background-color: black;
-    color: white;
+.navbar a {
+  color: #ff4d4d;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 6px 12px;
+  border: 2px solid #ff0000;
+  border-radius: 4px;
+  background-color: #1a1a1a;
 }
 
+.navbar a:hover {
+  background-color: #ff0000;
+  color: #000;
+}
+
+header {
+  background-color: #000;
+  border-bottom: 4px double #ff0000;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#headings {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #000;
+  color: #fff;
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+  color: #ff0000;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+.sub_head{           
+  font-size: 1.25rem;
+  color: #ff0000;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.sub_head2{           
+  font-size: 1.5rem;
+  color: #ff0000;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+#profiles .profile_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr)); 
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 1100px;     
+  padding-inline: 1rem;  
+}
+
+
+.profile {
+  background: #191919;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  border: 3px dashed #ff0000;
+}
+
+.profile:hover {
+  border: 3px solid #ff0000;           
+  transform: translateY(-6px);  
+  background-color:  rgba(255,0,0,.35);
+
+}
+
+.profile img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0.5rem auto 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.figure_card {
+  background: #191919;        
+  border: 3px solid #222;     
+  border-radius: 8px;        
+  padding: 18px;             
+  text-align: center;        
+  max-width: 1075px;          
+  margin: 2rem auto; 
+  border: 3px dashed #ff0000;         
+}
+
+.figure_card:hover {
+  border: 3px solid #ff0000;           
+  transform: translateY(-6px);  
+  background-color:  rgba(255,0,0,.35);
+
+}
+
+.figure_card figure {
+  margin: 0;                  
+}
+
+.figure_card img {
+  display: block;            
+  width: min(900px, 100%);    
+  height: auto;              
+  margin: 0 auto;             
+  border-radius: 8px;         
+}
+
+.figure_card figcaption {
+  margin-top: 0.75rem;       
+  font-style: italic;        
+  opacity: 0.9;              
+}
+
+.team_table {
+  width: 100%;
+  border-collapse: collapse;        
+  background: #191919;               
+  color: #fff;                       
+  margin: 2rem auto;  
+
+}
+
+.team_table, .team_table th, .team_table td {
+  border: 2px dashed #ff0000;                
+}
+
+.team_table th, .team_table td {
+  padding: 12px;                      
+  text-align: center;    
+  vertical-align: top;             
+}
+
+.figure_card, .table_wrap{
+  max-width: 1100px;      
+  margin: 2rem auto;      
+  box-sizing: border-box; 
+}
+
+.table_wrap .team_table {
+  width: 100%;
+  margin: 0;              
+}
+
+.page{
+  max-width: 1100px;
+  margin: 0 auto; 
+}
+
+.swords {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-image: url("../images/sword.png"), url("../images/sword.png");
+  background-repeat: repeat-y, repeat-y;      
+  background-position: left 0 top, right 0 top; 
+  background-size: 200px auto, 200px auto;  
+  background-color: #000; 
+  image-rendering: pixelated;
+  background-repeat: no-repeat round, no-repeat round;
+
+}
+
+footer {
+  background-color: #000;
+  color: #ff4d4d;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  border-top: 4px double #ff0000;
+}
