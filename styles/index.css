@@ -1,5 +1,9 @@
+/*width 1024px, everything aligns to this px*/
+*{
+    box-sizing: border-box;
+}
 
-
+/*base font, color and background graphic */
 body {
     font-family: "Courier New", 'Courier New', Courier, monospace;
     background-image: radial-gradient(red, black);
@@ -7,15 +11,17 @@ body {
 
 }
 
-aside{
-    display: none;
-}
-
+/*aside appears when hovered over*/
 aside:hover{
     display: block;
 }
 
+/*hover colour over link buttons*/
+a:link, a:visited{
+    color: red;
+}
 
+/*base border styles for mentioned attributes*/
 #Description, footer, .navbar, #latest-project{
     border: 2px solid #e99a45; 
     background-color: #000;
@@ -23,15 +29,19 @@ aside:hover{
     margin-bottom: 20px;
 }
 
+/*projects section central alignment*/
 #latest-project{
     text-align: center;
 }
 
-.container{
+/*container alignment and footer*/
+.container, footer{
     margin-left: auto;
     margin-right: auto;
     width: 1024px;
 }
+
+/*all images aligned */
 img{
     height: 160px;
     width: 300px;
@@ -40,12 +50,14 @@ img{
     margin-right: auto;
 }
 
+/*menu bar alignment*/
 .navbar{
     height: 40px;
     text-align: center; 
     padding-left: 40px;   
 }
 
+/*menu bar style and border*/
 .navbar a {
   color: #ff4d4d;
   text-decoration: none;
@@ -56,18 +68,20 @@ img{
   background-color: #1a1a1a;
 }
 
-
+/*menu bar hover*/
 .navbar a:hover {
   background-color: #ff0000;
   color: #000;
 }
 
-.gif-container{
+/*gif image */
+.castle-container{
     position: relative;
     display: inline-block;
 }
 
-.gif{
+/*gif image size and positioning*/
+.castle{
     width: 100%;
     max-width: 1000px;
     height: auto;
@@ -76,9 +90,9 @@ img{
     border: 2px solid gold;
 }
 
-
+/*text overlay on top of gif image*/
 .text_overlay {
-    color: red;
+    color: gold;
     font-size: large;
     font-weight: bold;
     font-style: oblique;
@@ -88,6 +102,7 @@ img{
     transform: translate(-50%, -50%);
 }
 
+/*decorative swords on left and right of page*/
 .left-sword, .right-sword{
     width: 300px;
     height: auto;
@@ -107,10 +122,6 @@ main{
     text-align: center;
 }
 
-
-a:link, a:visited{
-    color: red;
-}
 
 footer p {
 display: inline-block;
@@ -133,6 +144,8 @@ float: right;
 text-align: right;
 }
 
+
 #copyright{
     text-align: center;
+    color: gold;
 }
