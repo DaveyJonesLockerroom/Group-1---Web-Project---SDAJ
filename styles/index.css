@@ -52,7 +52,7 @@ a:link, a:visited{
 .container, footer{
     margin-left: auto; /*center horizontally to the left*/
     margin-right: auto; /*center horizontally to the right */
-    width: 1024px; /*fixed width of content*/
+    max-width: 1024px; /*fixed width of content*/
 }
 
 /*Base sizing anc alignment for all images  */
