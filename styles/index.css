@@ -5,88 +5,100 @@
 
 /*base font, color and background graphic */
 body {
-    font-family: "Courier New", 'Courier New', Courier, monospace;
-    background-image: radial-gradient(red, black);
-    color: red;
+    font-family: "Courier New", 'Courier New', Courier, monospace; /*font family */
+    background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
+    color: red; /*default text colour*/
 
 }
 
 /*aside appears when hovered over*/
 aside:hover{
-    display: block;
+    display: block; /*This makes the aside visible whened hovered over*/
 }
 
 /*hover colour over link buttons*/
 a:link, a:visited{
-    color: red;
+    color: red; /* colour of link when visited previously*/
 }
 
-/*base border styles for mentioned attributes*/
+/*base border, background colour, inner spacing and spacing below each element for mentioned attributes*/
 #Description, footer, .navbar, #latest-project{
-    border: 2px solid #e99a45; 
-    background-color: #000;
-    padding: 15px;
-    margin-bottom: 20px;
+    border: 2px solid #e99a45; /* gold border*/ 
+    background-color: #000; /* black background*/
+    padding: 15px; /*inner spacing*/
+    margin-bottom: 20px; /*how much spacing between elements below*/
 }
 
-/*projects section central alignment*/
+/*centers the cotent of #latest project*/
 #latest-project{
-    text-align: center;
+    text-align: center; 
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns, equal width */
+
+}
+
+/* Project images */
+.projects-grid img {
+  width: 100%;   /* make images take full column width */
+  height: auto;  /* keep aspect ratio */
+  border: 2px solid gold; /* optional: style */
+  border-radius: 8px;      /* optional: rounded corners */
 }
 
 /*container alignment and footer*/
 .container, footer{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1024px;
+    margin-left: auto; /*center horizontally to the left*/
+    margin-right: auto; /*center horizontally to the right */
+    width: 1024px; /*fixed width of content*/
 }
 
-/*all images aligned */
+/*Base sizing anc alignment for all images  */
 img{
     height: 160px;
     width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: block; /*changes image into block element, allowing it to be centered using margins */
+    margin-left: auto; /*center margins evenly spaced out */
+    margin-right: auto;/*center margins evenly spaced out */
 }
 
 /*menu bar alignment*/
 .navbar{
-    height: 60px;
-    text-align: center; 
-    padding-left: 40px;   
+    height: 60px; /*menu bar height*/
+    text-align: center; /*text is aligned in center*/
 }
 
 /*menu bar style and border*/
 .navbar a {
-  color: #ff4d4d;
-  text-decoration: none;
-  margin: 0 15px;
-  padding: 6px 12px;
-  border: 2px solid #ff0000;
-  border-radius: 4px;
-  background-color: #1a1a1a;
+  color: red; /* text colour is red*/
+  text-decoration: none; /*removes underline*/
+  margin: 0 70px; /* spacing left/right of each link */
+  padding: 6px 12px; /*inline spacing in the link box*/
+  border: 2px solid red; /* border thickness and colour*/
+  border-radius: 6px; /*how round the edges of borders are*/
+  background-color: black; /*colour of link button background*/
 }
 
 /*menu bar hover*/
 .navbar a:hover {
-  background-color: #ff0000;
-  color: #000;
+  background-color: red; /*colour when hovered over*/
+  color: black; /*text turns black on hover*/
 }
 
-/*gif image */
+/*castle image container */
 .castle-container{
-    position: relative;
-    display: inline-block;
+    position: relative; /*allows tex overlay to be positioned absolute on top of image*/
+    display: inline-block; /* shrinks content to fit*/
 }
 
 /*gif image size and positioning*/
 .castle{
     width: 100%;
     max-width: 1000px;
-    height: auto;
-    display: block;
-    image-rendering: pixelated;
+    height: auto; /* maintain aspect ratio */
+    image-rendering: pixelated; /* keeps pixelated effect for retro GIFs */
     border: 2px solid gold;
 }
 
@@ -95,37 +107,38 @@ img{
     color: gold;
     font-size: large;
     font-weight: bold;
-    font-style: oblique;
-    position: absolute;
+    font-style: oblique; /*slanted text*/
+    position: absolute; /* positioned relative to container */
     top: 65%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* center text exactly */
 }
 
 /*decorative swords on left and right of page*/
 .left-sword, .right-sword{
-    width: 300px;
-    height: auto;
-    position: fixed;
-    top: 30%;
+    width: 15vw;
+    height: auto; /*keeps aspect ratio*/
+    position: fixed; /*images moves with you as you scroll*/
+    top: 30%; /*center position*/ 
+    z-index: 10; /*keeps it from going under main content*/
 }
 
 .left-sword{
-    left: 0;
+    left: 0; /*sword fixed to the left side*/
 }
 
 .right-sword{
-    right: 0;
+    right: 0; /*sword fixed to the right side*/
 }
 
 main{
-    text-align: center;
+    text-align: center; /*centers all main text*/
 }
 
 
-footer p {
-display: inline-block;
-width: 33%;
+footer p { /*allows footer links to be side by side*/
+display: inline-block; 
+width: 33%; /* each paragraph takes 1/3 of footer */
 }
 
 
