@@ -19,24 +19,11 @@ test
     <!--Linked to apply.css page-->
     <link rel="stylesheet" href="styles/apply.css">
 
-    
     <style>
         .top_page {
-            
-            /* color: white;
-             putting text in the middle of the image  
-            display: flex;
-          
-            align-items: center;
-            justify-content: center;
-           
-            font-size: 50px;
-            setting the size of image  QUESTIONS: why is my image not filling up the entire section  
-            min-height: 100vh; */
-            
             background-image: url('images/dark_fantasy_image.jpg');
             background-repeat: no-repeat;
-            background-size: cover;   
+            background-size: cover;  
         }
     </style>
 
@@ -59,7 +46,7 @@ test
      <section class="top_page">
 
         <div class="content">
-            <h2>Find a roles that is suitable for you!!!</h2>
+            <h2>Find Your Future Here!</h2>
         
             <a href="#moreinfo" class="info">Apply Now</a>
 
@@ -71,17 +58,17 @@ test
 
     <!-- Information section  -->
      <div class="swords">
+        
      <header id="moreinfo">    
         <h1>Begin Your Journey With Us</h1>
+        <p>Before you begin click <a href="careers.html"><strong>HERE</strong></a> to find out the right roles for you.</p>    
     </header>
-
-    <p>Before you begin click <a href="careers.html"><strong>HERE</strong></a> to find out the right roles for you.</p>
+    
+    
+    
     
 
     <br>
-
-    
-
 
 
 
@@ -95,9 +82,10 @@ test
 
         <!--First and last name-->
         <div class="form-textinput">
-            <label for="firstname">Name:</label>
-            <input type="text" pattern="[A-Za-z]+" name= "firstname" id="firstname" placeholder="First Name" maxlength ="20" size="20" required >
-            <input type="text" pattern="[A-Za-z]+" name= "lastname" id="lastname" placeholder="Last Name" maxlength ="20" size="20" required>
+            <label for="name">Name:</label>
+            <input type="text" pattern="[A-Za-z]+" name= "firstname" id="name" placeholder="First Name" maxlength ="20" size="20" required >
+            <input type="text" pattern="[A-Za-z]+" name="lastname" id="name" placeholder="Last Name" maxlength ="20" size="20" required> 
+            
         </div>
 
         <!--Birthday-->
@@ -110,11 +98,11 @@ test
         <fieldset class="form-gender">
             <legend>Gender</legend>
                 <label>
-                <input type="radio" name="gender" id="male">Male
+                <input type="radio" name="gender" id="male" >Male
                 </label>
 
                 <label>
-                <input type="radio" name="gender" id="female">Female
+                <input type="radio" name="gender" id="female" >Female
                 </label>
         </fieldset>
 
@@ -160,27 +148,45 @@ test
         <div class="form-skills">
             <h3 style="color: red;">Select the set of Skills you understand</h3>
         <div class="skills-selection">
-            <label><input type="checkbox" name="skills"> Skill1</label>
-            <label><input type="checkbox" name="skills"> Skill2</label>
-            <label><input type="checkbox" name="skills"> Skill3</label>
-            <label><input type="checkbox" name="skills"> Skill4</label>
-            <label><input type="checkbox" name="skills"> Skill5</label>
-            <label><input type="checkbox" name="skills"> Skill6</label>
+
+            <label for="skill1"><input type="checkbox" id="skill1" name="skill1">Skill1</label>
+            
+            <label for="skill2"><input type="checkbox" id="skill2" name="skill2">Skill2</label>
+            
+            <label for="skill3"><input type="checkbox" id="skill3" name="skill3">Skill3</label>
+            
+            <label for="skill4"><input type="checkbox" id="skill4" name="skill4">Skill4</label>
+            
+            <label for="skill5"><input type="checkbox" id="skill5" name="skill5">Skill5</label>
+            
+            <label for="skill6"><input type="checkbox" id="skill6" name="skill6">Skill6</label>
+            
+            
            
         </div>
         <div class="otherskills">
-            <label style="color: red;">Other Skills</label>
+            <label for="otherskill" style="color: red;">Other Skills</label>
             <br>
-            <textarea name="writetext" rows="5" cols="100" placeholder="Other Skills"></textarea>
+            <textarea name="writetext" id="otherskill" rows="5" cols="100" placeholder="If you selected Other for your state please enter the state that you are in HERE, along with your other skills."></textarea>
         </div>
             
         </div>
 
 
+        <div class="resume">
+            <label for="fileInput">Resume</label>
+            <br>
+            <input type="file" id="fileInput" name="myFile">
+        </div>
+        
+        
+
         <div class="buttons">
             <input type= "submit" value="Book" class="submit">
 	        <input type= "reset" value="Reset Form" class="reset">
         </div>
+        
+
         
 
     </form>
