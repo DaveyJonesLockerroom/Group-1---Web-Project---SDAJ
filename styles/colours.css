@@ -92,13 +92,13 @@ body {
     color: red; /*default text colour*/
 }
 
-.navtitle{
+.index-navbar{
     border: 0.15emn solid gold;
     background: linear-gradient(red, #0d0d0d, #1a1a1a);
     box-shadow: 1px 1px #ff0000;  
 }
 
-.navtitle a{
+.index-navbar a{
     color: red;
     border: 0.15em solid red;
     background-color: black;
@@ -106,17 +106,17 @@ body {
 
 
 /*menu bar hover*/
-.navtitle a:hover, footer a:hover{
+.index-navbar a:hover, .index-footer a:hover{
   background-color: red; 
   color: black; 
 }
 
-footer{
+.index-footer{
     border: 0.15em solid gold;
     background-color: black; 
 }
 
-footer a:hover{
+.index-footer a:hover{
     background-color: red;
     color: black;
 }

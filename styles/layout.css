@@ -105,7 +105,7 @@ aside:hover{
     display: block; 
 }
 
- .index-navbar, .index-footer{
+.index-navbar, .index-footer{
     text-align: center;
     border-radius: 0.3em; 
     position: relative; /*this creates stacking*/
@@ -158,9 +158,9 @@ aside:hover{
     font-size: 4.375rem;
     border-radius: 0.3em; 
     position: absolute; /* positions text overlay above everything and fixed in place(.castle_container) */
-    top: 60%; /*centers the text overlay from vertical point*/
-    left: 10%; /*centers the text overlay from the left*/
-    right: 10%; /*centers the text overlay from the right*/
+    top: 50%; /*centers the text overlay from vertical point*/
+    left: 20%; /*centers the text overlay from the left*/
+    right: 20%; /*centers the text overlay from the right*/
     font-size: large;
     font-weight: bold;
 }
@@ -175,20 +175,20 @@ main {
 }
 
 /* Footer links layout */
-footer p {
+.index-footer p {
     display: inline-block;
     width: 33%;
 }
 
-footer p:first-child {
+.index-footer p:first-child {
     float: left;
 }
 
-footer p:nth-child(2) {
+.index-footer p:nth-child(2) {
     text-align: center;
 }
 
-footer p:last-child {
+.index-footer p:last-child {
     float: right;
     text-align: right;
 }
