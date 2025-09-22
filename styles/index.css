@@ -14,11 +14,12 @@ a:link, a:visited{
 }
 
 /*base border, background colour, inner spacing and spacing below each element for mentioned attributes*/
-#Description, .navbar, footer, #latest-project{
+ .navbar, footer{
     border: 0.15em solid gold; /* gold border (2px)*/ 
     border-radius: 0.3em; 
     background-color: black; 
     padding: 1rem; /*inner spacing (16px)*/
+    position: relative; /*this creates stacking*/
     margin-top: 0.3rem; /* spacing between elements above (5px)*/
     margin-bottom: 10px; /* spacing between elements below (10px)*/
 }
@@ -28,11 +29,9 @@ footer{
     padding: 0.125rem; /*inner spacing*/
 }
 
-/*container alignment and footer*/
-.container, footer{
-    margin-left: auto; 
-    margin-right: auto; 
-    max-width: 70vw; /*fixed width of content*/
+.container{
+    margin: 2% auto; /*centers content*/
+    max-width: 90vw; /*same width as navbar, footer, castle*/
 }
 
 
@@ -66,7 +65,6 @@ footer{
 /*castle image size and positioning*/
 .castle{
     width: 100%;
-    max-width: 65vw; /*max-width of an element*/
     height: auto; /* maintain aspect ratio */
     image-rendering: pixelated; /* keeps pixelated effect to get retro effect on image */
     border: 0.15em solid gold;
@@ -75,38 +73,24 @@ footer{
 
 /*text overlay on top of image  - reference from https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/*/
 .text_overlay {
+    font-size: 4.375rem;
     background-color: rgba(0, 0, 0, 0.25);
     border: 0.104vw solid red;
-    border-radius: 0.3em;
+    border-radius: 0.3em; 
     color: gold;
     position: absolute; /* positions text overlay above everything and fixed in place(.castle_container) */
-    top: 42%; /*centers the text overlay from vertical point*/
-    left: 30%; /*centers the text overlay from the left*/
-    right: 30%; /*centers the text overlay from the right*/
-    font-size: medium;
+    top: 60%; /*centers the text overlay from vertical point*/
+    left: 10%; /*centers the text overlay from the left*/
+    right: 10%; /*centers the text overlay from the right*/
+    font-size: large;
     font-weight: bold;
 }
 
 #slogan {
-    font-size: x-large; /* slogan size is extra large*/
+    font-size: xx-large; /* slogan size is extra large*/
 }
 
-/*decorative swords on left and right of page*/
-.left-sword, .right-sword{
-    width: 15.6vw;
-    height: auto; /*keeps aspect ratio*/
-    position: absolute; /* swords placed above everything else and fixed in position - learned this from https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute*/ 
-    top: 40%; /*center position*/ 
-    z-index: 1; /*keeps it from going under main content - learned from https://web.dev/learn/css/z-index*/ 
-}
 
-.left-sword{
-    left: 0; 
-}
-
-.right-sword{
-    right: 0; 
-}
 
 main{
     text-align: center; /*centers all main text*/
