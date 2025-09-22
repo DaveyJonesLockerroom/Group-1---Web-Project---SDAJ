@@ -719,7 +719,7 @@ h3 { text-align: center; color: #fff; font-size: 1.25rem; }
   background: #191919;
   color: #fff;
   margin: 2rem auto;
-  min-width: 720px; /* prevent squishing too much on wide tables */
+  table-layout: fixed; 
 }
 .team_table,
 .team_table th,
@@ -731,6 +731,7 @@ h3 { text-align: center; color: #fff; font-size: 1.25rem; }
   padding: 0.75rem;                 
   text-align: center;
   vertical-align: top; /* align multi‑line text to the top of the cell */
+  white-space: normal; 
 }
 
 /* Fix for swords margin */
@@ -748,7 +749,7 @@ h3 { text-align: center; color: #fff; font-size: 1.25rem; }
 
 /* Swords margin area */
 .swords {
-  margin-top: 1rem;  /* tiny gap from header/footer */               
+  margin-top: 4rem;  /* tiny gap from header/footer */               
   margin-bottom: 1rem;             
   background-image: url("../images/sword.png"), url("../images/sword.png"); /* ^ two background layers: left swords, right swords */
   background-position: left 0 top, right 0 top; /* stick to the edges */
