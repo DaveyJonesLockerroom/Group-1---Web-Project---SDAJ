@@ -26,7 +26,7 @@
     width: 5em;
 }
 
-.navbar {
+.navtitle {
     color:#ff4d4d;
     text-decoration: none; /*getting rid of the underline*/
     border: 2px solid #ff0000;
@@ -37,7 +37,7 @@
 }
 
 /* when hovering on the navigation it will change colour*/
-.navbar:hover {
+.navtitle:hover {
     color: black;
     background-color: #ff0000;
 }
