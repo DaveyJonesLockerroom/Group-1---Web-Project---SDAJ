@@ -14,15 +14,16 @@ A game development company expanding its tech team (G01)
 
     position: fixed; /* keeps the navbar in position so it doesnt move when you scoll*/
     
-    /* changes position of the nav buttons to the right position  */
-    display: flex;
-    justify-content: space-between; 
-    
-    /* These changes the position of nav bar so it fits the entire screen  */
+    /* These changes the position of nav bar so it fits the entire screen width wise */
     top: 0; 
     left: 0;
     right: 0;
     
+    
+
+    /* changes position of the nav buttons to the right position  */
+    display: flex;
+    justify-content: space-between;     
     
     box-shadow: 1px 1px #ff0000; /* Adds a red shadow at the bottom of navbar */
     background: linear-gradient(red, #0d0d0d, #1a1a1a); 
@@ -36,7 +37,7 @@ A game development company expanding its tech team (G01)
 /* giving the navigation colour  */
 .navtitle {
     color:#ff4d4d;
-    text-decoration: none;
+    text-decoration: none; /*getting rid of the underline*/
     border: 2px solid #ff0000;
     background-color: #1a1a1a;
     border-radius: 4px; /* makes the border more round  */
@@ -106,6 +107,8 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     font-size: 14px;
     line-height: 1.6;
+
+    
 }
 
 
@@ -114,10 +117,11 @@ form {
     font-family: 'Courier New', Courier, monospace;
 
     
-    margin: 2% 20%;/* pushes the things towards the middle */
+    margin: 2% 30%;/* pushes the things towards the middle */
     
-
     color: red;
+
+    
 }
 
 /* spaces things out  */
@@ -125,6 +129,7 @@ form {
     font-size: 20px;
     display: grid;
     gap: 1em; 
+
 }
 
 .form-textinput {
@@ -198,6 +203,8 @@ fieldset {
 /* creating a border for skills  */
 .form-skills {
     border: double red;
+
+    
 }
 
 
@@ -231,6 +238,7 @@ fieldset {
     background-color: black;
     border: double red;
     color: #ffcccc;
+    width: 60%; /*minimizes the textarea */
 }
 
 .resume {
