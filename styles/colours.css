@@ -89,11 +89,9 @@ footer nav a:hover {
 
 body { 
     background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
-    color: red; /*default text colour*/
 }
 
-.index-navbar{
-    border: 0.15emn solid gold;
+.index-navbar, .index-footer{
     background: linear-gradient(red, #0d0d0d, #1a1a1a);
     box-shadow: 1px 1px #ff0000;  
 }
@@ -107,18 +105,14 @@ body {
 
 /*menu bar hover*/
 .index-navbar a:hover, .index-footer a:hover{
-  background-color: red; 
-  color: black; 
+  background-color: black; 
+  color: red; 
 }
 
-.index-footer{
-    border: 0.15em solid gold;
-    background-color: black; 
-}
 
 .index-footer a:hover{
-    background-color: red;
-    color: black;
+    background-color: black;
+    color: red;
 }
 
 .castle{
