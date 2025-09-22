@@ -48,7 +48,7 @@ body {
     color: #ff4d4d;
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.6; /*spaces between each line*/
 }
 
 
