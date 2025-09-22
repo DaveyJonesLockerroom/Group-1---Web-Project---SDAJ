@@ -1,19 +1,17 @@
-/*width 1024px, everything aligns to this px*/
+/*width 1024vw, everything aligns to this px*/
 *{
     box-sizing: border-box;
 }
 
-/*base font, color and background graphic */
-body {
-    font-family: "Courier New", 'Courier New', Courier, monospace; /*font family */
-    background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
-    color: red; /*default text colour*/
 
+
+header{
+    text-align: center; /*aligns the company logo image within the hdeader to the center*/
 }
 
 /*aside appears when hovered over*/
 aside:hover{
-    display: block; /*This makes the aside visible whened hovered over*/
+    display: block; /*This makes the aside visible when hovered over*/
 }
 
 /*hover colour over link buttons*/
@@ -22,31 +20,22 @@ a:link, a:visited{
 }
 
 /*base border, background colour, inner spacing and spacing below each element for mentioned attributes*/
-#Description, footer, .navbar, #latest-project{
-    border: 2px solid #e99a45; /* gold border*/ 
-    background-color: #000; /* black background*/
+#Description, .navbar, #latest-project{
+    border: 2px solid gold; /* gold border*/ 
+    border-radius: 4px;
+    background-color: black; /* black background*/
     padding: 15px; /*inner spacing*/
     margin-bottom: 20px; /*how much spacing between elements below*/
 }
 
-/*centers the cotent of #latest project*/
-#latest-project{
-    text-align: center; 
+footer{
+    border: 2px solid #e99a45; /* gold border*/ 
+    border-radius: 4px;
+    background-color: black; /* black background*/
+    padding: 2px; /*inner spacing*/
+    margin-bottom: 20px; /*how much spacing between elements below*/
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns, equal width */
-
-}
-
-/* Project images */
-.projects-grid img {
-  width: 100%;   /* make images take full column width */
-  height: auto;  /* keep aspect ratio */
-  border: 2px solid gold; /* optional: style */
-  border-radius: 8px;      /* optional: rounded corners */
-}
 
 /*container alignment and footer*/
 .container, footer{
@@ -55,14 +44,6 @@ a:link, a:visited{
     max-width: 1024px; /*fixed width of content*/
 }
 
-/*Base sizing anc alignment for all images  */
-img{
-    height: 160px;
-    width: 300px;
-    display: block; /*changes image into block element, allowing it to be centered using margins */
-    margin-left: auto; /*center margins evenly spaced out */
-    margin-right: auto;/*center margins evenly spaced out */
-}
 
 /*menu bar alignment*/
 .navbar{
@@ -71,55 +52,63 @@ img{
 }
 
 /*menu bar style and border*/
-.navbar a {
+.navbar a, footer a{
   color: red; /* text colour is red*/
   text-decoration: none; /*removes underline*/
   margin: 0 70px; /* spacing left/right of each link */
   padding: 6px 12px; /*inline spacing in the link box*/
   border: 2px solid red; /* border thickness and colour*/
-  border-radius: 6px; /*how round the edges of borders are*/
+  border-radius: 4px; /*how round the edges of borders are*/
   background-color: black; /*colour of link button background*/
 }
 
 /*menu bar hover*/
-.navbar a:hover {
+.navbar a:hover, footer a:hover{
   background-color: red; /*colour when hovered over*/
   color: black; /*text turns black on hover*/
 }
 
 /*castle image container */
 .castle-container{
-    position: relative; /*allows tex overlay to be positioned absolute on top of image*/
+    position: relative; /*allows text overlay to be positioned absolute on top of image*/
     display: inline-block; /* shrinks content to fit*/
 }
 
-/*gif image size and positioning*/
+/*castle image size and positioning*/
 .castle{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1000px; /*max-width of an element*/
     height: auto; /* maintain aspect ratio */
     image-rendering: pixelated; /* keeps pixelated effect for retro GIFs */
     border: 2px solid gold;
+    border-radius: 4px;
 }
 
 /*text overlay on top of gif image*/
 .text_overlay {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid red;
+    border-radius: 4px;
     color: gold;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     font-style: oblique; /*slanted text*/
     position: absolute; /* positioned relative to container */
-    top: 65%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%); /* center text exactly */
+    transform: translate(-50%, -40%); /* center text exactly */
+}
+
+#slogan {
+    font-size: x-large;
 }
 
 /*decorative swords on left and right of page*/
 .left-sword, .right-sword{
     width: 15vw;
     height: auto; /*keeps aspect ratio*/
-    position: fixed; /*images moves with you as you scroll*/
-    top: 30%; /*center position*/ 
+    position: absolute; /*images is fixed into its' position*/
+    top: 40%; /*center position*/ 
     z-index: 10; /*keeps it from going under main content*/
 }
 
@@ -143,7 +132,7 @@ width: 33%; /* each paragraph takes 1/3 of footer */
 
 
 footer p:first-child {
-float: left;
+float: left; 
 }
 
 
@@ -155,10 +144,4 @@ text-align: center;
 footer p:last-child {
 float: right;
 text-align: right;
-}
-
-
-#copyright{
-    text-align: center;
-    color: gold;
 }
