@@ -87,6 +87,54 @@ footer nav a:hover {
 
 /*index page start*/
 
+body { 
+    background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
+    color: red; /*default text colour*/
+}
+
+.navtitle{
+    border: 0.15emn solid gold;
+    background: linear-gradient(red, #0d0d0d, #1a1a1a);
+    box-shadow: 1px 1px #ff0000;  
+}
+
+.navtitle a{
+    color: red;
+    border: 0.15em solid red;
+    background-color: black;
+}
+
+
+/*menu bar hover*/
+.navtitle a:hover, footer a:hover{
+  background-color: red; 
+  color: black; 
+}
+
+footer{
+    border: 0.15em solid gold;
+    background-color: black; 
+}
+
+footer a:hover{
+    background-color: red;
+    color: black;
+}
+
+.castle{
+    border: 0.15em solid gold;
+}
+
+.text_overlay {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: red;
+    color: gold;
+}
+
+#slogan{
+    color: gold;
+}
+
 /* index page end  */
 
 
