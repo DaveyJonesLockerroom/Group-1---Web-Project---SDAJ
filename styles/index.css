@@ -36,12 +36,12 @@ footer{
 
 
 /*menu bar alignment*/
-.navbar{
+.index-navbar{
     text-align: center;
 }
 
 /*menu bar style and border*/
-.navbar a, footer a{
+.index-navbar a, .index-footer a{
   color: red; /* text colour is red*/
   text-decoration: none; /*removes underline*/
   margin: 0 5vw; /* spacing left/right of each link (adjusts to screen width)*/

@@ -26,7 +26,7 @@
     width: 5em;
 }
 
-.navtitle {
+.navbar {
     color:#ff4d4d;
     text-decoration: none; /*getting rid of the underline*/
     border: 2px solid #ff0000;
@@ -37,7 +37,7 @@
 }
 
 /* when hovering on the navigation it will change colour*/
-.navtitle:hover {
+.navbar:hover {
     color: black;
     background-color: #ff0000;
 }
@@ -105,7 +105,7 @@ aside:hover{
     display: block; 
 }
 
- .navtitle, footer{
+ .index-navbar, .index-footer{
     text-align: center;
     border-radius: 0.3em; 
     position: relative; /*this creates stacking*/
@@ -114,23 +114,24 @@ aside:hover{
 }
 
 
-footer {
+.index-footer {
     padding: 0.125rem;
     
 }
 
-.navtitle{
+.index-navbar{
     text-align: center;
     margin-bottom: 1rem;
     padding: 2em;
 }
 
 .container{
+    width: auto;
     margin: 2% auto; /*centers content*/
     max-width: 90vw; /*same width as navbar, footer, castle*/
 }
 
-.navtitle a, footer a{
+.index-navbar a, .index-footer a{
   text-decoration: none; /*removes underline*/
   margin: 0 5vw; /* spacing left/right of each link (adjusts to screen width)*/
   padding: 0.5em 1em; /*inline spacing in the link box (6px, 12px)*/
