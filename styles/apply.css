@@ -142,9 +142,19 @@ form {
     border: 2px solid #ff0000;
     background-color: #0d0d0d;
     color: #ffcccc;
-    width: 20%; /* changing size/widths of inputs */
+    width: 25%; /* changing size/widths of inputs */
     font-size: 20px;   
-    
+}
+
+.form-textinput #email,
+.form-textinput #address
+ {
+    font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
+    border: 2px solid #ff0000;
+    background-color: #0d0d0d;
+    color: #ffcccc;
+    width: 50%; /* changing size/widths of inputs */
+    font-size: 20px;   
 }
 
 .form-textinput input:hover {
