@@ -107,8 +107,6 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     font-size: 14px;
     line-height: 1.6;
-
-    
 }
 
 
@@ -328,5 +326,4 @@ footer nav a:hover {
   background-position: left 0 top, right 0 top; 
   background-size: 200px auto, 200px auto;  
   background-repeat: no-repeat round, no-repeat round;
-
 }
