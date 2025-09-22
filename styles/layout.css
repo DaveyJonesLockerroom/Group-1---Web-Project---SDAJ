@@ -49,6 +49,9 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     font-size: 14px;
     line-height: 1.6; /*spaces between each line*/
+    margin: 0;
+    padding: 0;
+    
 }
 
 
@@ -277,6 +280,12 @@ th, td {
 
 
 /* jobs page end  */
+
+
+
+
+
+
 
 /*apply page start*/
 
