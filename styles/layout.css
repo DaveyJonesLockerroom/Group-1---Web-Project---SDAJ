@@ -92,6 +92,180 @@ footer nav a:hover {
 
 /* jobs page start  */
 
+
+/* ---------- Intro paragraph ---------- */
+#intro {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem; /* 1200px */
+  margin: 1.25rem auto; /* 20px */
+  gap: 1.25rem; /* 20px */
+  font-size: 1.125rem; /* 18px */
+}
+
+/* ---------- Benefits + Aside side by side ---------- */
+.benefits-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* equal heights */
+  max-width: 75rem; /* 1200px */
+  margin: 1.25rem auto; /* 20px */
+  gap: 1.25rem; /* 20px */
+}
+
+.benefits {
+  flex: 1;
+  background-color: #111;
+  border: 2px solid #ff0000;
+  border-radius: 0.375rem; /* 6px */
+  padding: 0.9375rem; /* 15px */
+  color: #ffcccc;
+}
+
+.benefits ul {
+  margin: 0.625rem 1.25rem; /* 10px 20px */
+  padding: 0 1.25rem; /* 20px */
+}
+
+.benefits li {
+  margin: 0.5rem 0; /* 8px */
+}
+
+/* ---------- Game promo box (aside) ---------- */
+.game-promo {
+  width: 25%;
+  min-width: 15.625rem; /* 250px */
+  background-color: #1a1a1a;
+  border: 2px dashed #ff0000;
+  border-radius: 0.5rem; /* 8px */
+  padding: 1.25rem; /* 20px */
+  color: #ffcccc;
+}
+
+.game-promo h2 {
+  color: #ff0000;
+  font-size: 1.125rem; /* 18px */
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.game-promo img {
+  border: 2px solid #ff0000;
+  border-radius: 0.25rem; /* 4px */
+  width: 100%;
+  display: block;
+}
+
+/* ---------- Table ---------- */
+.table-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.625rem; /* 10px */
+  margin: 2.5rem auto; /* 40px */
+  width: 100%;
+  max-width: 75rem; /* 1200px */
+  clear: both;
+}
+
+.table-container {
+  flex-grow: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 1rem; /* 16px */
+  border: 2px dashed #ff0000;
+  color: #ffcccc;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+/* ---------- Hiring process ---------- */
+.hiring-process {
+  max-width: 50rem; /* 800px */
+  margin: 1.25rem auto; /* 20px */
+  padding: 0.9375rem; /* 15px */
+  background-color: #111;
+  border: 2px solid #ff0000;
+  border-radius: 0.375rem; /* 6px */
+}
+
+.hiring-process ol {
+  margin: 0.625rem 1.25rem; /* 10px 20px */
+  padding: 0 1.25rem; /* 20px */
+  color: #ffcccc;
+}
+
+.hiring-process li {
+  margin: 0.5rem 0; /* 8px */
+}
+
+/* ---------- Application link ---------- */
+.application {
+  text-align: center;
+}
+
+.application a {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #000;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  margin: 1.25rem auto; /* 20px */
+  border: 2px solid #ff4d4d;
+  border-radius: 0.375rem; /* 6px */
+  font-weight: bold;
+}
+
+.application a:hover {
+  background-color: #860303;
+  color: #ffffff;
+}
+
+
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 57.5rem) { /* 920px */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 0.3125rem 0; /* 5px */
+  }
+
+  .benefits-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-promo {
+    width: 95%;
+    min-width: unset;
+  }
+
+  .table-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sword-left, .sword-right {
+    display: none;
+  }
+
+  table {
+    width: 95%;
+    font-size: 0.75rem; /* 12px */
+  }
+}
+
+
 /* jobs page end  */
 
 /*apply page start*/
