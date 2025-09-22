@@ -265,10 +265,6 @@ th, td {
     align-items: center;
   }
 
-  .sword-left, .sword-right {
-    display: none;
-  }
-
   table {
     width: 95%;
     font-size: 0.75rem; /* 12px */
