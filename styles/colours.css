@@ -65,7 +65,7 @@ body {
 
 footer {
     
-    background: linear-gradient(to bottom, #0d0d0d, red);
+    background: black;
     padding: 15px;/* changes the size of footer  */
     border-top: double red;
     text-align: center;
@@ -93,10 +93,11 @@ body {
 
 .index-navbar, .index-footer{
     background: linear-gradient(red, #0d0d0d, #1a1a1a);
-    box-shadow: 1px 1px #ff0000;  
+    border-color: gold;
+    padding: 1rem;
 }
 
-.index-navbar a{
+.index-navbar a, .index-footer a{
     color: red;
     border: 0.15em solid red;
     background-color: black;
@@ -105,15 +106,10 @@ body {
 
 /*menu bar hover*/
 .index-navbar a:hover, .index-footer a:hover{
-  background-color: black; 
-  color: red; 
+  background-color: red; 
+  color: black; 
 }
 
-
-.index-footer a:hover{
-    background-color: black;
-    color: red;
-}
 
 .castle{
     border: 0.15em solid gold;
@@ -121,7 +117,6 @@ body {
 
 .text_overlay {
     background-color: rgba(0, 0, 0, 0.25);
-    border-color: red;
     color: gold;
 }
 
