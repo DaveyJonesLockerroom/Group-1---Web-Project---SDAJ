@@ -69,16 +69,22 @@ footer {
     padding: 15px;/* changes the size of footer  */
     border-top: double red;
     text-align: center;
+    color: rgb(255, 255, 255);
     
 }
 
+footer img {
+    width: 10em;
+}
+
 footer nav a {
-    color: white;
+    
+    color: rgba(255, 255, 255, 0.849);
     text-decoration: none;
 }
 
 footer nav a:hover {
-    color: black;
+    color: gold;
 }
 
 /* General styles end  */
