@@ -167,6 +167,10 @@ footer nav a:hover {
   clear: both;
 }
 
+.jobs-section {
+  text-align: center;
+}
+
 .table-container {
   flex-grow: 1;
 }
