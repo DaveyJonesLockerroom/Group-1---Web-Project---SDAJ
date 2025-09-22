@@ -100,4 +100,27 @@ footer nav a:hover {
 /* apply page end  */
 
 /* about page start  */
+
+/* Sub_head styles */
+
+.sub_head {
+  font-size: 1.25rem;
+  color: #ff0000;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+.sub_head2 {
+  font-size: 1.5rem;
+  color: #ff0000;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.sub_head3 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
 /* about page end  */
