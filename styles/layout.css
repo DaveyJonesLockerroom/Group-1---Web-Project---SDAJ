@@ -61,7 +61,7 @@ body {
   background-image: url("../images/sword.png"), url("../images/sword.png"); /* ^ two background layers: left swords, right swords */
   background-position: left 0 top, right 0 top; /* stick to the edges */
   background-size: 12vw auto, 12vw auto; /* sword width = 12% of viewport */   
-  background-repeat: no-repeat round, no-repeat round; 
+  background-repeat: round, round;  
   /* ^ 'round' repeats only whole images and scales slightly to avoid cut‑offs */
   image-rendering: pixelated; /* keep pixelated look */ 
 
@@ -383,16 +383,18 @@ th, td {
 
 /*apply page start*/
 
+/* sizing the image  */
 .top_page {
     
-    font-size: 50px;
-    min-height: 100vh; /*view point height to fit the entire screen*/
+    font-size: 40px;
+    min-height: 100vh; /*view height to fit the entire screen*/
     
     /* background-image: url('images/chatgpt_darkfantasy.png');
     background-repeat: no-repeat;
     background-size: cover; */
 }
 
+/* editing texts  */
 .top_page {
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     color: white;
@@ -431,8 +433,7 @@ th, td {
 
 
 form {
-    font-family: 'Courier New', Courier, monospace;
-
+    font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     
     margin: 2% 30%;/* pushes the things towards the middle */
     
@@ -441,11 +442,11 @@ form {
     
 }
 
-/* spaces things out  */
+
 form {
     font-size: 20px;
-    display: grid;
-    gap: 1em; 
+    display: grid; /* spaces things out  */
+    gap: 1em; /*create a 1em gap between each element*/
 
 }
 
@@ -474,7 +475,9 @@ form {
     font-size: 20px;   
 }
 
-.form-textinput input:hover {
+.form-textinput input:hover,
+.form-textinput #email:hover,
+.form-textinput #address:hover {
     background-color: rgb(44, 44, 44);
 }
 
@@ -504,7 +507,7 @@ form {
 /* changing the border in feildset to red and make it smaller*/
 fieldset {
     border: 2px double red;
-    width: 50%;
+    width: 60%;
 }
 
 /* changing label colour  */
@@ -538,12 +541,13 @@ fieldset {
 
 .skills-selection {
     margin: 2%;/* adjusting space around the selections   */
-    display: grid;
-    grid-template-rows: 1fr 1fr;/* 2 rows */
-    grid-template-columns: 40% 40% 40%; /* 3 columns */
-    color: #ffcccc;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;/* 2 rows each will take 1/2*/
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns  each will take 1/3*/
     
+    color: #ffcccc;
 }
+
 
 .skills-selection :hover{
     color: red;
@@ -564,7 +568,7 @@ fieldset {
     width: 60%; /*minimizes the textarea */
 }
 
-.resume {
+.resume { /*reference "https://www.w3schools.com/tags/att_input_type_file.asp"*/
     
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     
@@ -578,12 +582,11 @@ fieldset {
 /* styling the file button  */
 input[type="file"]::file-selector-button {
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
-    color: #ff4d4d;;
+    color: #ffcccc;
     border: solid 2px red;
     background-color: black;
     font-size: 1em;
-    width: 100px;
-    height: 30px;
+    
 }
 
 input[type="file"]::file-selector-button:hover {
