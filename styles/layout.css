@@ -467,6 +467,10 @@ form {
     font-size: 20px;   
 }
 
+.form-textinput #postcode {
+    width: 10%;
+}
+
 .form-textinput input:hover {
     background-color: rgb(44, 44, 44);
 }
@@ -533,7 +537,7 @@ fieldset {
     margin: 2%;/* adjusting space around the selections   */
     display: grid;
     grid-template-rows: 1fr 1fr;/* 2 rows */
-    grid-template-columns: 40% 40% 40%; /* 3 columns */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
     color: #ffcccc;
     
 }
@@ -593,12 +597,12 @@ input[type="file"]::file-selector-button:hover {
 .submit,
 .reset {
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     color: black;
     width: 200px;
     height: 50px;
     font-size: 20px;
-    border: solid 5px #ff4d4d;;
+    border: solid 5px gold;
     border-radius: 5px;
 }
 
