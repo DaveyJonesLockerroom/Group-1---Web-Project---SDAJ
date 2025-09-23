@@ -60,6 +60,7 @@ body {
   margin-top: 1rem;  /* tiny gap from header/footer */               
   margin-bottom: 1rem;             
   background-image: url("../images/sword.png"), url("../images/sword.png"); /* ^ two background layers: left swords, right swords */
+  /* Sword image credited to https://www.dreamstime.com/pixel-art-depiction-golden-sword-intricate-details-features-crossguard-wing-like-designs-pointed-tip-background-image387514910 */
   background-position: left 0 top, right 0 top; /* stick to the edges */
   background-size: 12vw auto, 12vw auto; /* sword width = 12% of viewport */   
   background-repeat: no-repeat round, no-repeat round; 
@@ -246,7 +247,6 @@ header{
   margin: 2.5rem auto; /* 40px */
   width: 100%;
   max-width: 75rem; /* 1200px */
-  clear: both;
 }
 
 .jobs-section {
