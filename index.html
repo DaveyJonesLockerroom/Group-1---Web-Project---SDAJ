@@ -9,13 +9,6 @@
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/colours.css">
 
-        <!--Embedded CSS Line-->
-        <style> 
-            body { /*base font, color and background graphic */
-                font-family: "Courier New", 'Courier New', Courier, monospace; /*font family */
-                background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
-                color: red; /*default text colour*/}
-        </style>
 
     </head>
     
@@ -24,47 +17,50 @@
             <div class="container">
 
             <div class="content">
-                <header>
-                    <img src="images/company_logo.png" alt="company logo" class="logo"> <!--logo reference - https://cooltext.com/Logo-Design-Fantasy-->
-                </header>
-            
+                        <header> <!--Company logo in header-->
+                            <img src="images/company_logo.png" alt="company logo" class="logo"> <!--logo reference - https://cooltext.com/Logo-Design-Fantasy-->
+                        </header>
+                    
+                    <!--navigation bar-->
+                    <div class="index-navbar">
+                        <a href="jobs.html">CAREERS</a>
+                        <a href="apply.html">APPLY</a>
+                        <a href="about.html">ABOUT</a>
+                    </div>
 
-    <nav class="index-navbar">
-        <a href="jobs.html">CAREERS</a>
-        <a href="apply.html">APPLY</a>
-        <a href="about.html">ABOUT</a>
-    </nav>
 
+            <main>  <!--middle castle image-->
+                    <div class="castle-container">
+                        <img src="images/AdobeStock_1514174831.jpeg" alt="castle_image" class="castle"> <!-- images taken from Adobe Stock - https://wallhere.com/en/wallpaper/57173-->
+                    </div> 
 
-       <main> 
-            <div class="castle-container">
-                <img src="images/AdobeStock_1514174831.jpeg" alt="castle_image" class="castle"> <!-- images taken from Adobe Stock - https://wallhere.com/en/wallpaper/57173-->
-            </div> 
-
-            <div class="text_overlay">
-                <p id="slogan">Timeless Classics, Forged in Darkness...</p>
-                <p>With humble beginnings in Melborune, Australia, SDAJ is a game development company that 
-                creates new and innovative games with nostalgia at heart.From PC to mobile platforms, our games showcase our infinite imagination   
-                that continues to delight players around the world.</p>
+                    <!--text overlay above castle image-->
+                    <div class="text_overlay">
+                        
+                        <!--Company slogan-->
+                        <p id="slogan">Timeless Classics, Forged in Darkness...</p>
+                        <p id="company description">With humble beginnings in Melborune, Australia, SDAJ is a game development company that 
+                        creates new and innovative games with nostalgia at heart.From PC to mobile platforms, our games showcase our infinite imagination   
+                        that continues to delight players around the world.</p>
+                    </div>
+                    
+                </main>
+                        <!--footer and links to email, Jira and Github-->
+                        <footer class="index-footer">
+                            <p><a href="mailto:someone@example.com">Send email</a></p>
+                            <p><a href="https://jack-rosewarne.atlassian.net/jira/software/projects/AWPP1/boards/34">Jira Link</a></p>
+                            <p><a href="https://github.com/DaveyJonesLockerroom/Group-1---Web-Project---SDAJ">Github Link</a></p>
+                        </footer>
+                    </div>
+                <!--Inline CSS line for copyright tag-->
+                <p style="text-align: center; border: 0.2px solid gold; border-radius: 4px; 
+                    background-color: black; margin-top: 20px; max-width: 500px; 
+                    margin-left: auto; margin-right: auto;">&copy; 2025 Swinburne University of Technology </p>
             </div>
-            
-        </main>
-            
-        <footer class="index-footer">
-            <p><a href="mailto:someone@example.com">Send email</a></p>
-            <p><a href="https://jack-rosewarne.atlassian.net/jira/software/projects/AWPP1/boards/34">Jira Link</a></p>
-            <p><a href="https://github.com/DaveyJonesLockerroom/Group-1---Web-Project---SDAJ">Github Link</a></p>
-        </footer>
-
-        <!--Inline CSS line-->
-        <p style="text-align: center; border: 0.2px solid gold; border-radius: 4px; 
-            background-color: black; margin-top: 20px; max-width: 500px; 
-            margin-left: auto; margin-right: auto;">&copy; 2025 Swinburne University of Technology </p>
-    </div>
 
          
 
-    </div>
+        </div>
 
         </body>
     </html>

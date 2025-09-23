@@ -102,49 +102,31 @@ footer nav a:hover {
 /*INDEX PAGE START --------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------*/
 
+/*company logo in header*/
 header{
     text-align: center;
 }
 
-/*aside appears when hovered over*/
-aside:hover{
-    display: block; 
-}
 
 .index-navbar, .index-footer{
     text-align: center;
+    border: 0.15em solid;
     border-radius: 0.3em; 
-    position: relative; /*this creates stacking*/
     margin-top: 0.3rem; /* spacing between elements above (5px)*/
     margin-bottom: 10px; /* spacing between elements below (10px)*/
+    display: flex; /*lines everything up in a row*/
+    justify-content: center; /*aligns flex items to the center*/
+    gap: 6vw; /*gap between the buttons*/
+    width: 100%; /*makes everything align with castle image*/
 }
 
 
-.index-footer {
-    padding: 0.125rem;
-    
-}
-
-.index-navbar{
-    text-align: center;
-    margin-bottom: 1rem;
-    padding: 2em;
-}
 
 .container{
-    width: auto;
+    width: auto; /*takes up as much space as the content*/
     margin: 2% auto; /*centers content*/
-    max-width: 90vw; /*same width as navbar, footer, castle*/
+    max-width: 100vw; /*same width for navbar, footer, castle*/
 }
-
-.index-navbar a, .index-footer a{
-  text-decoration: none; /*removes underline*/
-  margin: 0 5vw; /* spacing left/right of each link (adjusts to screen width)*/
-  padding: 0.5em 1em; /*inline spacing in the link box (6px, 12px)*/
-  border-radius: 0.3em; 
-  background-color: black; 
-}
-
 
 /*castle image container  - reference from https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css*/
 .castle-container{
@@ -155,16 +137,16 @@ aside:hover{
 .castle{
     width: 100%;
     height: auto; /* maintain aspect ratio */
-    image-rendering: pixelated; /* keeps pixelated effect to get retro effect on image */
     border-radius: 0.3em;
 }
 
 /*text overlay on top of image  - reference from https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/*/
 .text_overlay {
+    text-align: center;
     font-size: 4.375rem;
     border-radius: 0.3em; 
     position: absolute; /* positions text overlay above everything and fixed in place(.castle_container) */
-    top: 50%; /*centers the text overlay from vertical point*/
+    top: 85%; /*centers the text overlay from vertical point*/
     left: 20%; /*centers the text overlay from the left*/
     right: 20%; /*centers the text overlay from the right*/
     font-size: large;
@@ -175,29 +157,7 @@ aside:hover{
     font-size: xx-large;
 }
 
-/* Center main content */
-main {
-    text-align: center;
-}
 
-/* Footer links layout */
-.index-footer p {
-    display: inline-block;
-    width: 33%;
-}
-
-.index-footer p:first-child {
-    float: left;
-}
-
-.index-footer p:nth-child(2) {
-    text-align: center;
-}
-
-.index-footer p:last-child {
-    float: right;
-    text-align: right;
-}
 
 
 /* INDEX PAGE END ---------------------------------------------------------------------------

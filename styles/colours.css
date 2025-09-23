@@ -65,7 +65,7 @@ body {
 
 footer {
     
-    background: linear-gradient(to bottom, #0d0d0d, red);
+    background: black;
     padding: 15px;/* changes the size of footer  */
     border-top: double red;
     text-align: center;
@@ -89,16 +89,15 @@ footer nav a:hover {
 
 body { 
     background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
-    color: red; /*default text colour*/
 }
 
-.index-navbar{
-    border: 0.15emn solid gold;
+.index-navbar, .index-footer{
     background: linear-gradient(red, #0d0d0d, #1a1a1a);
-    box-shadow: 1px 1px #ff0000;  
+    border-color: gold;
+    padding: 1rem;
 }
 
-.index-navbar a{
+.index-navbar a, .index-footer a{
     color: red;
     border: 0.15em solid red;
     background-color: black;
@@ -111,15 +110,6 @@ body {
   color: black; 
 }
 
-.index-footer{
-    border: 0.15em solid gold;
-    background-color: black; 
-}
-
-.index-footer a:hover{
-    background-color: red;
-    color: black;
-}
 
 .castle{
     border: 0.15em solid gold;
@@ -127,7 +117,6 @@ body {
 
 .text_overlay {
     background-color: rgba(0, 0, 0, 0.25);
-    border-color: red;
     color: gold;
 }
 
