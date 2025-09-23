@@ -735,7 +735,7 @@ h3 { text-align: center; color: #fff; font-size: 1.25rem; }
 }
 
 .table_wrap { 
-  overflow-x: auto; padding-inline: 1rem; 
+  padding-inline: 1rem; 
 }
 
 /* Swords margin area */
