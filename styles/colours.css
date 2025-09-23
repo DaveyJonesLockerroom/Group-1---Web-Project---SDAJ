@@ -91,20 +91,20 @@ body {
     background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
 }
 
-.index-navigation, .index-footer{
-    
+.index-navbar, .index-footer{
     border-color: gold;
+    background: linear-gradient(to bottom, #0d0d0d, red);
 }
 
-.index-navigation a, .index-footer a{
+.index-navbar a, .index-footer a{
     color: red;
-    border: 0.15em solid gold;
-    background-color: rgb(161, 5, 5);
+    border: 0.15em solid red;
+    background-color: black;
 }
 
 
 /*menu bar hover*/
-.index-navigation a:hover, .index-footer a:hover{
+.index-navbar a:hover, .index-footer a:hover{
   background-color: red; 
   color: black; 
 }
