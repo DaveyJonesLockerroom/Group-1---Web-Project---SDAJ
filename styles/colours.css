@@ -88,36 +88,52 @@ footer nav a:hover {
 /*index page start*/
 
 body { 
-    background-image: radial-gradient(red, black); /* I applied a radial gradinet to background graphic*/
+    background-image: radial-gradient(#ff0000, #0d0d0d); /* I applied a radial gradinet to background graphic*/
 }
 
-.index-navbar, .index-footer{
-    border-color: gold;
+.index_navbar, .index_footer{
+    border-color: #cb9b51;
     background: linear-gradient(to bottom, #0d0d0d, red);
 }
 
-.index-navbar a, .index-footer a{
-    color: red;
-    border: 0.15em solid red;
-    background-color: black;
+.index_navbar a, .index_footer a{
+    color: #ff0000;
+    border: 0.15em solid #ff0000;
+    background-color: #0d0d0d;
 }
 
 
 /*menu bar hover*/
-.index-navbar a:hover, .index-footer a:hover{
-  background-color: red; 
-  color: black; 
+.index_navbar a:hover, .index_footer a:hover{
+    background-color: #ff0000; 
+    color: #0d0d0d; 
 }
 
-
-.castle{
-    border: 0.15em solid gold;
-}
-
-.text_overlay, #slogan{
-    background-color: #0d0d0d;
+.image_text a{
+    text-decoration: none;
     color: #ff0000;
+    border: 0.15em solid #ff0000;
+    background-color: #0d0d0d;
+
+}
+
+.image_text a:hover{
+    background-color: #ff0000; 
+    color: #0d0d0d; 
+}
+
+.castle_image{
+    border-color: #cb9b51;
+}
+
+.image_text{
     border-color: #ff0000;
+    border: 0.15em solid red;
+    background-color: #0d0d0d  
+}
+
+h1, #company_description{
+    color: #ff0000;
 }
 
 
