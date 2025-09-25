@@ -56,21 +56,6 @@ body {
 }
 
 
-.swords {
-  margin-top: 1rem;  /* tiny gap from header/footer */               
-  margin-bottom: 1rem;             
-  background-image: url("../images/sword.png"), url("../images/sword.png"); /* ^ two background layers: left swords, right swords */
-  /* Sword image credited to https://www.dreamstime.com/pixel-art-depiction-golden-sword-intricate-details-features-crossguard-wing-like-designs-pointed-tip-background-image387514910 */
-  background-position: left 0 top, right 0 top; /* stick to the edges */
-  background-size: 12vw auto, 12vw auto; /* sword width = 12% of viewport */   
-  background-repeat: round, round; 
-  /* ^ 'round' repeats only whole images and scales slightly to avoid cut‑offs */
-  image-rendering: pixelated; /* keep pixelated look */ 
-  
-  
-  
-
-}
 footer {
     
     background: linear-gradient(to bottom, #0d0d0d, rgb(210, 0, 0));
