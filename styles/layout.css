@@ -24,7 +24,7 @@
 }
 
 .logo img{
-    width: 5em;
+    width: 10em;
 }
 
 .navtitle {
@@ -66,6 +66,7 @@ body {
   background-repeat: round, round; 
   /* ^ 'round' repeats only whole images and scales slightly to avoid cut‑offs */
   image-rendering: pixelated; /* keep pixelated look */ 
+  
 
 }
 footer {
@@ -108,30 +109,41 @@ footer nav a:hover {
 -------------------------------------------------------------------------------------------*/
 
 /*company logo in header*/
-header{
-    text-align: center;
+.header-logo{
+    display: flex; 
+    justify-content: center; /*makes the logo be in the center*/
 }
 
 
-.index-navbar, .index-footer, .castle{
+.index_navbar, .index_footer{
     text-align: center;
     border: 0.15em solid;
     border-radius: 0.3em; 
     margin-top: 0.2rem; /* spacing between elements above (5px)*/
-    margin-bottom: 10px; /* spacing between elements below (10px)*/
+    margin-bottom: 0.2rem; /* spacing between elements below (10px)*/
     display: flex; /*lines everything up in a row*/
     justify-content: center; /*aligns flex items to the center*/
     gap: 6vw; /*gap between the buttons*/
-    margin: 2% auto; /*makes everything align with castle image*/
+    margin: 1% auto; /*makes everything align with castle image*/
     width: 90%;
+    position: relative;
+    padding: 1rem;
+}
+
+.castle_image{
+    text-align: center;
+    border: 0.50em inset;
+    border-radius: 0.3em; 
+    display: flex; /*lines everything up in a row*/
+    justify-content: center; /*aligns flex items to the center*/
+    margin: 2% auto; /*makes everything align with castle image*/
+    width: 87%;
     position: relative;
 }
 
-.index-navbar, .index-footer{
-  padding: 1rem; /* sets inline padding*/
-}
 
-.index-navbar a, .index-footer a{
+
+.index_navbar a, .index_footer a{
     font-size: x-large;
     padding:0.2em 0.6em;
     text-decoration: none;
@@ -139,40 +151,53 @@ header{
 
 }
 
-.index-container{
-    width: auto; /*takes up as much space as the content*/
-    margin: 2% auto; /*centers content*/
+.index_container{ 
     max-width: 100vw; /*same width for navbar, footer, castle*/
 }
 
-/*castle image container  - reference from https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css*/
-.castle-container{
+
+/*This line of code was referenced from: 
+How to Overlay Text on an Image in HTML and CSS. (2023). Bannerbear.com. https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/
+
+‌text overlay on top of image */
+.castle_image_container{
     position: relative; /*makes sure the container doesn't move, but text can overlay on it */  
 }
 
+
 /*castle image size*/
-.castle{
+.castle_image{
     height: auto; /* maintain aspect ratio */
     border-radius: 0.3em;
 }
 
-/*text overlay on top of image  - reference from https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/*/
-.text_overlay {
+
+/*This line of code was referenced from: 
+How to Overlay Text on an Image in HTML and CSS. (2023). Bannerbear.com. https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/
+
+‌text overlay on top of image */
+.image_text{
     border: 0.15em solid;
     border-radius: 0.3em;
     text-align: center;
-    font-size: 4.375rem;
     position: absolute; /* positions text overlay above everything and fixed in place(.castle_container) */
-    top: 85%; /*centers the text overlay from vertical point*/
+    top: 88%; /*centers the text overlay from vertical point*/
     left: 20%; /*centers the text overlay from the left*/
     right: 20%; /*centers the text overlay from the right*/
     font-size: large;
     font-weight: bold;
 }
 
-#slogan {
-    font-size: xx-large;
+h1{
+  font-size: 2rem;
 }
+
+#company_description{
+  font-size: 1rem;
+  
+}
+
+
 
 
 
@@ -601,6 +626,7 @@ input[type="file"]::file-selector-button:hover {
 #headings { text-align: center; padding-top: 20px; }
 h2 { text-align: center; color: #ff0000; padding-top: 20px; font-size: 2rem; } 
 h3 { text-align: center; color: #fff; font-size: 1.25rem; }
+
 
 /* Sub_head styles */
 .sub_head {
