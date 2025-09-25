@@ -66,6 +66,7 @@ body {
   background-repeat: round, round; 
   /* ^ 'round' repeats only whole images and scales slightly to avoid cut‑offs */
   image-rendering: pixelated; /* keep pixelated look */ 
+  
 
 }
 footer {
@@ -599,6 +600,7 @@ input[type="file"]::file-selector-button:hover {
 #headings { text-align: center; padding-top: 20px; }
 h2 { text-align: center; color: #ff0000; padding-top: 20px; font-size: 2rem; } 
 h3 { text-align: center; color: #fff; font-size: 1.25rem; }
+
 
 /* Sub_head styles */
 .sub_head {
