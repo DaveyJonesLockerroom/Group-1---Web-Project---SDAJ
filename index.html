@@ -9,58 +9,75 @@
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/colours.css">
 
+        <style> /*Embedded CSS for image text hover*/
+            .image_text:hover{
+                background-color: #ff0000; 
+                color: #0d0d0d;
+            }
 
+            .image_text a:hover{
+                background-color: #ff0000; 
+                color: #0d0d0d; 
+            }
+
+        </style>
     </head>
     
     <body>
-        <div>
-            <div class="index-container">
 
-            <div class="index-content">
-                        <header> <!--Company logo in header-->
-                            <img src="images/company_logo.png" alt="company logo" class="logo"> <!--logo reference - https://cooltext.com/Logo-Design-Fantasy-->
-                        </header>
+         <header class="header-logo"> <!--Company logo in header-->
+                <img src="images/company_logo.png" alt="company logo"> <!--logo reference - https://cooltext.com/Logo-Design-Fantasy-->
+         </header>
+    <div>
+
+           
+        <div class="index_container">
+
+            <div class="index_content">
+                        
                     
                     <!--navigation bar-->
-                    <div class="index-navbar">
-                        <a href="jobs.html">Careers</a>
+                    <div class="index_navbar" aria-label="navigation menu">
                         <a href="apply.html">Apply</a>
+                        <a href="jobs.html">Careers</a>
                         <a href="about.html">About</a>
                     </div>
 
 
             <main>  <!--middle castle image-->
-                    <div class="castle-container">
-                        <img src="images/AdobeStock_1514174831.jpeg" alt="castle_image" class="castle"> <!-- images taken from Adobe Stock - https://wallhere.com/en/wallpaper/57173-->
+                    <div class="castle_image_container">
+                        <img src="images/AdobeStock_1514174831.jpeg" alt="castle_background_image" class="castle_image"> <!-- images taken from Adobe Stock - https://wallhere.com/en/wallpaper/57173-->
                     </div> 
 
-                    <!--text overlay above castle image-->
-                    <div class="text_overlay">
-                        
+                    <div class="image_text" aria-label="company description">
                         <!--Company slogan-->
-                        <p id="slogan">Timeless Classics, Forged in Darkness...</p>
-                        <p>With humble beginnings in Melborune, Australia, SDAJ is a game development company that 
+                        <h1>Timeless Classics, Forged in Darkness...</h1>
+
+                    <!--text overlay above castle image-->
+                    
+                        <p id="company_description">With humble beginnings in Melborune, Australia, SDAJ is a game development company that 
                         creates new and innovative games with nostalgia at heart.From PC to mobile platforms, our games showcase our infinite imagination   
                         that continues to delight players around the world.</p>
                     </div>
                     
                 </main>
                         <!--footer and links to email, Jira and Github-->
-                        <footer class="index-footer">
+                        <footer class="index_footer" aria-label="external links">
                             <p><a href="mailto:someone@example.com">Send email</a></p>
                             <p><a href="https://jack-rosewarne.atlassian.net/jira/software/projects/AWPP1/boards/34">Jira Link</a></p>
                             <p><a href="https://github.com/DaveyJonesLockerroom/Group-1---Web-Project---SDAJ">Github Link</a></p>
                         </footer>
-                    </div>
+
                 <!--Inline CSS line for copyright tag-->
                 <p style="text-align: center; border: 0.2px solid gold; border-radius: 4px; 
                     background-color: black; margin-top: 20px; max-width: 500px; 
                     margin-left: auto; margin-right: auto;">&copy; 2025 Swinburne University of Technology </p>
             </div>
+        
 
          
 
         </div>
-
-        </body>
-    </html>
+    </div>
+</body>
+</html>
