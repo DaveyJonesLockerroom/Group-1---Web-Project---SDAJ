@@ -570,7 +570,8 @@ fieldset {
 }
 
 /* styling the file button  */
-input[type="file"]::file-selector-button {
+
+input[type="file"]::file-selector-button { /*https://www.w3schools.com/tags/att_input_type_file.asp*/
     font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
     color: #ff4d4d;;
     border: solid 2px red;
