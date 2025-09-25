@@ -87,7 +87,7 @@ footer nav a:hover {
 
 /*index page start*/
 
-body { 
+body{ 
     background-image: radial-gradient(#ff0000, #0d0d0d); /* I applied a radial gradinet to background graphic*/
 }
 
@@ -109,18 +109,6 @@ body {
     color: #0d0d0d; 
 }
 
-.image_text a{
-    text-decoration: none;
-    color: #ff0000;
-    border: 0.15em solid #ff0000;
-    background-color: #0d0d0d;
-
-}
-
-.image_text a:hover{
-    background-color: #ff0000; 
-    color: #0d0d0d; 
-}
 
 .castle_image{
     border-color: #cb9b51;
@@ -129,12 +117,9 @@ body {
 .image_text{
     border-color: #ff0000;
     border: 0.15em solid red;
-    background-color: #0d0d0d  
+    background-color: #0d0d0d;  
 }
 
-h1, #company_description{
-    color: #ff0000;
-}
 
 
 /* index page end  */
